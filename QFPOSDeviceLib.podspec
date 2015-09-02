@@ -2,8 +2,9 @@ Pod::Spec.new do |s|
   s.name         = "QFPOSDeviceLib"
   s.version      = "1.0.0"
   s.summary      = "QFPay POSDevice iOS SDK"
+	s.license      = 'COMMERCIAL'
   s.description  = <<-DESC
-                  QFPay POSDevice iOS SDK
+                  QFPay POSDevice iOS SDK, POS link SDK
                    DESC
   s.homepage     = "https://qfpay.com"
   s.license      = "COMMERCIAL"
@@ -14,5 +15,5 @@ Pod::Spec.new do |s|
   s.public_header_files     = "QFPOSDeviceLib/*.h"
   s.vendored_libraries      = "QFPOSDeviceLib/*.a"
   s.frameworks   = "SystemConfiguration", "Security", "CoreBluetooth"
-  s.ios.library  = "libc++", "libz"
+  s.ios.library  = "c++", "z"
 end
